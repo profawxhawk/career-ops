@@ -1,0 +1,593 @@
+30-DAY CAREER STRATEGY PLAN
+Bharath Kumar Thulasidoss | SDE-2 at Uber | Targeting SD3 Roles in India and
+Abroad
+Prepared by Joshua Talreja, RecruitingSniper | April 2026
+
+CLIENT SNAPSHOT
+
+Current Role Software Engineer II, Uber (Data Platform) | Bengaluru, India
+Experience 5 years: Zomato (SDE-1 and SDE-2, 3+ years) + Uber (1+ year)
+Education B.Tech, Computer Science, IIITD | CGPA 9.04/10 | Dean's Gold Medal
+Target Role SD3 (Senior Software Engineer) | Open to India and global opportunities
+Target Companies Databricks, Agoda, global product companies, high-scale tech firms
+Core Strengths Distributed systems, data platform, full-stack (Go, Rust, Java, React),
+
+AI-native tooling
+
+Application Stage Getting fewer inbound calls than before; low conversion on outreach and
+
+applications
+
+Visa Interest Open to relocation abroad; needs clarity on which companies sponsor
+
+WHAT IS ACTUALLY GOING ON
+
+Bharath, here is the honest read. You are a strong engineer with real impact at two
+well-regarded companies, a stellar academic record, and a genuinely broad technical
+foundation. The market is not rejecting your abilities. It is failing to find you, and when it does
+find you, the story it encounters is not tuned for the role you want.
+CORE DIAGNOSIS: This is an entry-positioning problem, not a capability problem.
+Your LinkedIn profile describes what you are, not where you are headed.
+Your outreach generates interest but stops short of curiosity.
+Your resume relies on one version for all applications, so keyword resonance is low.
+Your networking is surface-level: connection requests and generic messages rather than real
+conversations.
+One near-miss at Agoda (bumped to SDE3/Staff round, rejected on a leadership question)
+signals that you can reach senior rooms but need to close more deliberately.
+
+Joshua Talreja | RecruitingSniperPage 1
+
+RecruitingSniper | topmate.io/joshua_talreja
+
+PRIORITY GAPS TO CLOSE
+
+Gap 1: LinkedIn is not a landing page for SD3, it is a job description for your current role
+Your headline and About section are written backward. They tell people what you do today.
+Recruiters searching for an SD3 need to land on a profile that proves you are already thinking
+and operating at that level. The Featured section has your resume uploaded, which signals
+passivity. There is zero LinkedIn activity, which means the algorithm is not surfacing you.
+Gap 2: No impact document, so every application starts from scratch
+You are rewriting bullets from memory each time. That is why some bullets lack metrics and
+why the same work looks different across applications. An impact document fixes this
+permanently. You said yourself that most of your work is internal, so you do not need public
+proof. You need a private structured record that you can pull from when writing for a specific job
+description.
+Gap 3: Outreach reads like a job seeker, not a problem solver
+You are messaging recruiters and mentioning the role you want, then attaching context about
+your background. That is the format almost everyone uses, which means it gets the response
+rate almost everyone gets: close to zero. The shift is from 'here is who I am' to 'here is what I
+know about the problem you are trying to solve and here is one example of me solving it.' That
+one change transforms how you are perceived before a call even happens.
+Gap 4: Application volume with low focus is tiring and low-yield
+You described applying broadly through LinkedIn, getting calls mostly from startups. The
+pattern is consistent with what happens when a strong candidate competes on quantity rather
+than fit. Narrowing to 5 to 10 target companies at a time and building a pipeline within each one
+outperforms 200 applications reliably.
+Gap 5: The senior-room question at Agoda
+When the hiring committee elevated your loop to SD3/Staff and the director asked how you
+manage resources and push for headcount, the expected answer is a story: a specific time you
+influenced without authority, built a case for investment, or navigated ambiguity at the team
+level. This is behavioral territory and it needs prepared stories ready to go, not improvised
+answers.
+
+YOUR IMPACT DOCUMENT: PRE-POPULATED STARTING POINT
+Fill in the 'YOUR NUMBER' cells with the actual figures from your work. These become the raw
+material for every resume version and every outreach message. Anything marked 'internal' is
+still valid: interviewers verify through your explanation, not through public links.
+Joshua Talreja | RecruitingSniperPage 2
+
+RecruitingSniper | topmate.io/joshua_talreja
+
+Company / Role Project / Initiative What You Did Metric / Impact (YOUR
+
+NUMBER)
+
+Uber | SDE-2 Schema Management
+
+System
+
+Built schema
+management for 150k+
+pipelines and 1M+ tables
+across query engines
+(Presto, Spark, Hudi)
+
+Contributed to safe
+deployments | reduced
+schema errors by YOUR
+NUMBER
+
+Uber | SDE-2 Data Co-Pilot
+(Multi-Agent AI)
+
+Built multi-agent
+framework with
+LangGraph for
+contextual data
+discovery; exposed API
+as MCP server
+
+Adopted by 1k+
+engineers | reduced
+discovery time by YOUR
+NUMBER
+
+Uber | SDE-2 Metadata and Lineage
+
+Service
+
+Kafka + Flink streaming
+ingestion for all data
+assets at Uber; handles
+100k+ RPM
+
+Latency impact: YOUR
+NUMBER | uptime
+improvement: YOUR
+NUMBER
+
+Uber | SDE-2 Cloud Data Asset
+Reconciliation
+
+Introduced cloud region
+support; reconciliation
+for 2M+ assets between
+cloud and on-prem
+
+Vertical DB scaling
+handled 2x write load |
+synced YOUR NUMBER
+assets
+
+Uber | SDE-2 Pipeline Optimization Migrated 4+ pipelines
+from on-prem to GCP;
+moved workloads from
+MapReduce to Spark
+
+Runtime: 5+ hrs to under
+1 hr | test coverage: 60%
+to 85%
+
+Zomato | SDE-2 WebSocket Service
+
+Rewrite
+
+Rearchitected real-time
+relay for merchant
+orders; moved EC2 + AS
+to ECS; legacy socket.io
+to uWebSockets
+
+Cost savings: 60% | peak
+containers: 200 to 15 |
+latency improved 20%
+
+Zomato | SDE-2 Merchant Outlet Service Led 2-person team;
+Kafka event
+propagation; Redis +
+DynamoDB for 1.5M
+read RPM
+
+Latency under 5ms |
+availability YOUR
+NUMBER |
+fault-tolerance events:
+YOUR NUMBER
+
+Zomato | SDE-2 Analytics Insighting
+
+Service
+
+YAML-based querier
+over Pinot + Redis; Spark
+ETL and Kafka pipelines
+from Hive + production
+traffic
+
+Widget creation time:
+weeks to under 1 day
+
+Zomato | SDE-2 JS Monorepo Orchestrated
+Zomato-wide JS
+monorepo with Vite,
+changeset versioning,
+automated releases
+
+Team productivity up
+30% | packages: logger,
+telemetry, Kafka
+publisher
+
+Zomato | SDE-1 Order Dashboard Offline
+
+Support
+
+Service workers +
+caching + FCM push
+
+Saved ~80% of orders
+placed during
+downtime
+
+Joshua Talreja | RecruitingSniperPage 3
+
+RecruitingSniper | topmate.io/joshua_talreja
+notifications for offline
+merchant order relay
+
+Zomato | SDE-1 Ztrends (Flagship
+Product)
+
+Developed food
+supply/demand
+visualization across
+India used by
+restaurateurs for
+location analysis
+
+100k+ restaurateur users
+| YOUR NUMBER
+sessions/month
+
+Zomato | SDE-1 Merchant Offers and
+Ads Platform
+
+Payout, outlet, offers,
+ads management
+features; UX redesign
+for order acceptance
+urgency
+
+Revenue: Rs
+50M/month | order
+acceptance under 17
+seconds
+
+LINKEDIN OVERHAUL: WHAT TO CHANGE AND WHY
+Headline: Rewrite it for the role you are targeting, not the role you are in
+Current headline describes your employer and tech stack. It is not wrong, but it is invisible to
+recruiters searching for SD3 talent. Replace it with something that names the level you are
+going for and the domain you own.
+Option A: Senior Software Engineer | Distributed Systems & Data Platform | Scaling
+infrastructure at Uber (100k+ RPM, 2M+ assets)
+Option B: SD3-Level Backend Engineer | Data Platform, AI Tooling, Real-Time Systems | Open
+to senior roles in India and globally
+Option C: Software Engineer II at Uber | Distributed Systems, AI-Native Infrastructure |
+Targeting Staff/SD3 at high-scale product companies
+
+About Section: Make it a narrative, not a spec sheet
+Your current About is a formal third-person summary of technologies. Rewrite it in first person.
+Open with the type of problem you are drawn to, name two or three concrete things you have
+built and their impact, and close with what you are looking for and how to reach you. Recruiters
+read this the way a hiring manager reads a cover letter. Make it earn its place.
+Featured Section: Remove the resume, add impact artifacts
+Uploading your resume to Featured communicates that you are looking for a job. That is not the
+signal you want. Instead, use this space to show work. Two or three posts or articles that walk
+through a problem you solved, how you approached it, and what the result was. Even a short
+write-up on GitHub or Medium about your LangGraph multi-agent system at Uber would make
+a strong Featured item. Screenshots of dashboards with context are fine. The point is to make
+someone curious enough to reach out.
+Skills Section: Move top skills to match SD3 keyword expectations
+Joshua Talreja | RecruitingSniperPage 4
+
+RecruitingSniper | topmate.io/joshua_talreja
+Your current top skills are Generative AI, Software Maintenance, and Infrastructure
+Development. These are not wrong but they are generic. Set your top three pinned skills to
+reflect what SD3 roles actually search for: something like Distributed Systems, Go (Golang), and
+Data Engineering or Backend Engineering depending on the role type you are targeting most.
+Activity: Post at minimum twice a month, comment on three posts a week
+You have no visible activity on LinkedIn. LinkedIn's algorithm is straightforward: active profiles
+surface in search results, inactive profiles do not. You do not need to write long articles. Short
+posts about something interesting you encountered at work, a technical tradeoff you thought
+about, or a lesson from building the multi-agent system all qualify. Writing about the Data
+Co-Pilot architecture with one concrete takeaway would land very well in the data engineering
+and AI community.
+Recommendations: Solicit two to three from former managers or senior peers
+A specific recommendation from a manager or tech lead at Zomato describing the WebSocket
+rewrite or the Merchant Outlet work would carry real weight. Generic praise does not move the
+needle. Impact-specific praise does. Ask your recommenders to name the project, the scale,
+and one outcome they observed directly.
+
+RESUME: WHAT TO FIX NOW
+Your resume has good raw material and it is readable. The structure needs three changes.
+1. Add a Summary (top of page): 3 to 4 sentences. Name your level, domain, top 2
+accomplishments with metrics, and what you are seeking. This is the first thing a recruiter
+reads and it currently does not exist.
+2. Trim bullets from 5 per role to 3 per role, prioritized by impact: Start with the biggest
+outcome, then technical depth, then a leadership or collaboration angle. Shorter and punchy
+beats long and comprehensive.
+3. Move the Skills section to the bottom: Right now it appears above your experience.
+Recruiters want to see impact first. Skills are context, not the headline.
+4. Quantify every bullet: Your Zomato and Uber bullets are mostly good but several still read
+as activities ('Spearheaded development of...') rather than outcomes. Every bullet should end
+or begin with a metric. Use your impact document to pull those numbers.
+5. Do not use one resume for all applications: Build a master resume from your impact
+document, then swap in 3 to 4 bullets per role that directly address the specific job
+description. The prompt Joshua mentioned will help you do this in Claude in about 10
+minutes per application.
+
+Joshua Talreja | RecruitingSniperPage 5
+
+RecruitingSniper | topmate.io/joshua_talreja
+
+OUTREACH SYSTEM: HOW TO GET CONVERSATIONS, NOT REJECTIONS
+The methodology described in the session is worth spelling out fully because it is the single
+highest-leverage change you can make.
+Step 1: Build a target list of 5 companies at a time
+Filter by: companies that will exist in 3 to 5 years, companies whose technical problems overlap
+with what you have built, companies that have hired people at your level from India before. Put
+these into a Google Sheet with columns for company, team or product area, key contacts
+(recruiter, EM, SD3 peer), outreach status, and follow-up date.
+Step 2: Find 3 contacts per company: one peer, one EM, one recruiter
+Use LinkedIn to search within the company, filtered by Bengaluru or your target market. Look at
+who is active, who posts, and who has Indian-origin names if you want easier rapport-building.
+For European companies especially, find Indians who have made the move and ask them
+directly about sponsorship processes.
+Step 3: Send the curiosity message, not the cover letter
+Your message should be three sentences or fewer. The structure is: name the specific problem
+you believe their team is solving, name one specific thing you built that is relevant to it with a
+metric, ask for 15 minutes. No resume. No background summary. No 'I hope this finds you well.'
+Joshua gave you the exact script in the session. Here it is written out:
+Hi [Name], I saw [Company] is scaling [Data Platform / real-time infrastructure / AI tooling]
+and I think the core challenge is [problem in one sentence].
+At Uber, I built a multi-agent data discovery system now used by 1,000+ engineers, and at
+Zomato I rewrote a WebSocket service handling 500k+ clients with a 60% cost reduction.
+Would you have 15 minutes to talk about what your team is working on?
+---
+Follow up 3 days later if no response: 'Not sure if you saw my last message, but here is
+another example that might be relevant to what you are building: [different project, one
+sentence, one metric]. Still happy to chat for 15 minutes if timing works.'
+
+Step 4: Bring your impact document into the call, not your resume
+When you get the call, the goal is to position yourself as someone who is thinking about their
+problem, not someone who is looking for their next job. Ask questions about the team's current
+technical challenges first. Then connect what you have built to what they need. The resume
+comes later, when they ask for it, at which point you also tailor it to that specific conversation.
+Step 5: Follow up and close loops
+Most people give up after one message. Most recruiters and EMs remember the person who
+followed up professionally. Send a second message 3 days after the first. If you had a call, send
+
+Joshua Talreja | RecruitingSniperPage 6
+
+RecruitingSniper | topmate.io/joshua_talreja
+a short note within 24 hours referencing one specific thing from the conversation. This keeps
+you top of mind when a role opens.
+
+IN-PERSON NETWORKING: MAKING IT CONCRETE
+Joshua was direct about this: face-to-face changes the conviction of the person in front of you.
+Here is how to make it a system rather than an occasional thing.
+• Search Meetup, LinkedIn Events, Hasgeek, and Google for 'Bangalore tech meetup' or
+'Bangalore data engineering' or 'Bangalore distributed systems' monthly. Commit to attending
+2 per month.
+• Uber Bengaluru almost certainly hosts or participates in external events. Your security badge
+does not follow you out the door but your Uber affiliation does. Use it to open conversations.
+• Your goal at every event is not to find a job. It is to have 3 interesting technical conversations.
+Nothing more. The job part follows over subsequent interactions.
+• When you meet someone interesting, connect on LinkedIn within 24 hours with a note
+referencing something specific from your conversation. That is your anchor for future
+outreach.
+• For global opportunities: search LinkedIn for Indians at your target European or APAC
+companies. Message them specifically about their relocation experience and what the
+sponsorship process looked like. This research saves months of guessing.
+
+30-DAY ACTION PLAN
+Each week has a clear primary focus. Do not skip ahead: the foundation weeks make the
+outreach weeks work.
+
+Week 1 Days 1
+to 7
+
+Build Your Foundation: Impact Document + LinkedIn Overhaul
+• Day 1 to 2: Draft your Impact Document. Use the pre-populated
+table above as your starting point. Fill in every 'YOUR NUMBER'
+field. For metrics you do not remember exactly, use ranges or
+approximations you can defend.
+• Day 3: Rewrite your LinkedIn headline using one of the three
+options above or a variation. Update the About section to
+first-person narrative format.
+• Day 4: Remove the resume from your Featured section. Write one
+short LinkedIn post (150 to 250 words) describing a technical
+challenge you solved at Uber or Zomato and what you learned.
+Publish it.
+
+Joshua Talreja | RecruitingSniperPage 7
+
+RecruitingSniper | topmate.io/joshua_talreja
+• Day 5: Update your top 3 LinkedIn pinned skills to reflect SD3
+keywords. Reach out to 2 former colleagues at Zomato to request
+specific impact-focused recommendations.
+• Day 6 to 7: Build your target company list. Select 5 companies. For
+each, identify 1 recruiter, 1 engineering manager, and 1 SD3 or senior
+engineer. Log them in a Google Sheet.
+
+Week 2 Days 8
+to 14
+
+Resume Tailoring + First Outreach Wave
+• Day 8: Rewrite your resume summary section (3 to 4 sentences, first
+person, includes metrics).
+• Day 9: Trim all roles to 3 bullets each, reordered with biggest
+impact first. Move Skills to the bottom. Run the resume through the
+AI prompt Joshua described: paste your impact document and the
+job description and let it suggest bullet swaps.
+• Day 10 to 11: Send curiosity messages to your first 5 contacts (1 per
+company). Do not attach a resume. Use the 3-sentence format from
+this plan.
+• Day 12: Attend or register for one Bangalore tech event happening
+in the next 2 weeks.
+• Day 13 to 14: Send follow-ups (3 days after Day 10 messages) to
+anyone who has not responded. Write your second LinkedIn post:
+this time on a technical insight, a system design tradeoff, or
+something you observed in the data engineering space.
+
+Week 3 Days 15
+to 21
+
+Conversations + Behavioral Prep
+• Day 15 to 16: For anyone who responded, schedule calls this week.
+Prepare by reading their company's recent engineering blog posts
+or LinkedIn posts to understand what they are building.
+• Day 17: Build your behavioral story bank. Write out 5 to 6 STAR
+stories covering: a time you influenced without authority, a project
+that failed and what you learned, a time you navigated ambiguity, a
+time you advocated for a technical decision, and a time you
+mentored or led a team through a challenge. These are the stories
+that closed the SD3 door at Agoda. Have them ready.
+• Day 18: Send your second wave of outreach. Add 5 more contacts
+to your sheet from the same or new companies.
+• Day 19 to 20: Attend the networking event you registered for. Goal: 3
+real conversations, 3 LinkedIn connections by Day 20 evening.
+• Day 21: Review your Google Sheet. How many people responded?
+How many calls happened? What follow-ups are pending? Update
+statuses and plan Week 4.
+
+Joshua Talreja | RecruitingSniperPage 8
+
+RecruitingSniper | topmate.io/joshua_talreja
+
+Week 4 Days 22
+to 30
+
+Pipeline Management + Iteration
+• Day 22 to 24: Close loops on any open conversations. If a call went
+well, follow up with a note and ask about next steps. If a company
+has an open role you are interested in after the conversation, ask for
+a referral directly.
+• Day 25: Assess which companies are worth continuing. Drop any
+that have gone completely silent after 2 follow-ups. Add 3 to 5 new
+companies to your sheet to replace them.
+• Day 26: Publish your third LinkedIn post. By now you have enough
+activity to start seeing profile view upticks. Look at who is viewing
+your profile and send targeted connection requests to anyone
+relevant.
+• Day 27 to 28: Do a resume refresh for any specific roles in your
+pipeline. Use your impact document and the AI prompt to generate
+tailored bullet variations for each company.
+• Day 29 to 30: Review the full 30 days. Count conversations initiated,
+response rate, calls completed, referrals obtained. This data tells
+you what is working and what to double down on in Month 2.
+
+AI RESUME TAILORING PROMPT (BUILD THIS ONCE, USE EVERY TIME)
+Joshua recommended using Claude (Anthropic) to help tailor your resume to individual job
+descriptions. Here is the prompt structure he described. Paste this into Claude Pro with your
+impact document and the job description attached:
+
+PROMPT TEMPLATE TO USE IN CLAUDE:
+I am a software engineer targeting [SD3 / Senior Software Engineer] roles. Attached is my
+impact document with all the projects I have worked on across Uber and Zomato, along with
+the metrics I have captured.
+Here is the job description I am applying for: [paste JD]
+Your task: Select the 3 most relevant projects from my impact document that best match the
+problems this company is trying to solve. For each, rewrite the bullet in the format: Led
+[initiative] that [measurable outcome] by [specific action]. Prioritize specificity and metrics. Do
+not fabricate any numbers. Only use what is in the impact document.
+Also suggest one bullet I should move to the top of my most recent role for this application.
+Output: A list of tailored resume bullets, ready to paste, plus one sentence explaining the
+match logic for each.
+Joshua Talreja | RecruitingSniperPage 9
+
+RecruitingSniper | topmate.io/joshua_talreja
+A Claude Pro subscription is worth the investment during an active search. It gives you this
+tailoring capability for every application without starting from scratch.
+
+NAVIGATING GLOBAL OPPORTUNITIES
+For roles outside India, the research and networking approach is slightly different. Here is the
+framework Joshua recommended:
+• Make a short list of 5 target countries or markets first: do not try to optimize for 'anywhere
+global' all at once. Choose regions where your tech stack is in demand: UK, Netherlands,
+Germany, Singapore, and Canada are solid options for distributed systems and data platform
+engineers.
+• For each market, identify 3 to 5 companies actively hiring senior backend or data platform
+engineers. Use LinkedIn Jobs filtered by location and then look at the hiring team.
+• Find Indians who have made this move. Search LinkedIn for '[Company] [Senior Engineer]
+India' or browse IIITD alumni groups for people at your target companies. Their first-hand
+experience on sponsorship, timelines, and culture will save you months.
+• Avoid startups in Europe if visa sponsorship is required. European regulatory requirements
+make sponsorship costly for early-stage companies. Mid-size to large product companies are
+your best bets.
+• Ask specifically: does this company have a history of sponsoring Indian engineers at the senior
+level? Have they done it in the last 12 months? If yes, they know the process and will move
+faster.
+• Your GitHub and patent (rotary Braille device, Patent No. 201911002013) are legitimately
+impressive and differentiate you globally. Lead with these in your outreach to international
+companies: innovation track record travels well.
+
+Joshua Talreja | RecruitingSniperPage 10
+
+RecruitingSniper | topmate.io/joshua_talreja
+
+HOW YOU WILL KNOW IT IS WORKING
+
+Track these numbers weekly. If they are not moving in the right direction after 3 weeks, the issue
+is either the message (response rate is low), the target list (the companies are not hiring at your
+level), or the profile (people are visiting but not engaging).
+Metric Week 2 Target Week 4 Target
+LinkedIn profile views (weekly) 2x current baseline 5x current baseline
+Outreach messages sent 5 to 10 20 to 25 total
+Response rate on outreach -- 20% or higher
+Conversations (calls or DM
+threads)
+
+1 to 2 4 to 6
+
+Referrals or introductions
+received
+
+-- 2 to 3
+Formal interviews in pipeline -- 1 to 2
+LinkedIn posts published 1 3
+
+RECRUITINGSNIPER RESOURCES
+
+These are available at topmate.io/joshua_talreja and are directly relevant to where you are in
+your search right now.
+Product Price Why It Matters for You
+The Impact Document Framework $4 Start here. A structured 60-minute process to
+build the repository Joshua described in your
+session. Everything else in this plan depends on it.
+
+SDE Resume Template (ATS
+Friendly)
+
+$1 A clean structural template to rebuild around
+your impact document content. Use this when
+you revamp this week.
+
+10X Your Profile Views (LinkedIn +
+Resume)
+
+$23 30-day system for LinkedIn visibility. Directly
+addresses the 'no inbound calls' problem you
+raised.
+
+Interview Confidence Masterclass $27 Covers behavioral prep and the structured
+answer approach that would have closed the
+Agoda SD3 round.
+
+Career Clarity: Find Your True
+Direction in 7 Days
+
+$14 Useful if you want to sharpen your thinking on
+India vs. global, startup vs. product company,
+before going deep on outreach.
+
+Joshua Talreja | RecruitingSniperPage 11
+
+RecruitingSniper | topmate.io/joshua_talreja
+
+Resume Review and Optimization
+(1:1)
+
+$81 When your resume is rebuilt and you want
+recruiter-level eyes on it before sending to your
+top 5 companies.
+
+1:1 Career Strategy Consultation $42 Book a follow-up after 30 days to review what
+worked, what did not, and what Month 2 should
+look like.
+All products and bookings: topmate.io/joshua_talreja
+
+The market is not waiting. Start today.
+Your instinct to get to SD3 is right. Your technical foundation is already there. The only
+gap is positioning and execution. This plan gives you the system. The work is yours.
+Joshua Talreja

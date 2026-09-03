@@ -1,11 +1,29 @@
 %-------------------------
 % Career-Ops LaTeX CV Template
-% Based on: Gabriel Sison / sb2nov resume template
-% License: MIT
+% Based on: Bharath Kumar's resume format
+% Used by: /career-ops latex
+%
+% PLACEHOLDERS (replaced by career-ops at generation time):
+%   {{NAME}}              — Full name
+%   {{EMAIL}}             — Email address
+%   {{LINKEDIN_URL}}      — LinkedIn profile URL
+%   {{LINKEDIN_DISPLAY}}  — LinkedIn display text
+%   {{GITHUB_URL}}        — GitHub profile URL
+%   {{GITHUB_DISPLAY}}    — GitHub display text
+%   {{STACKOVERFLOW_URL}} — StackOverflow profile URL
+%   {{STACKOVERFLOW_DISPLAY}} — StackOverflow display text
+%   {{CTFTIME_URL}}       — CTFtime team URL
+%   {{CTFTIME_DISPLAY}}   — CTFtime display text
+%   {{PHONE}}             — Phone number
+%   {{SUMMARY}}           — Summary paragraph (no \small{} wrapper needed)
+%   {{EXPERIENCE}}        — All experience blocks (resumeSubheading + resumeItemListStart/End)
+%   {{EDUCATION}}         — Education block (resumeSubheading)
+%   {{SKILLS}}            — Skills items (\item + \textbf{Category}{: items})
+%   {{ACHIEVEMENTS}}      — Achievement items (resumeItem blocks)
 %------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -13,111 +31,123 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+\usepackage{xcolor, fontawesome, tikz, hyperref}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\resumeItem}[1]{
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
   \item\small{
-    {#1 \vspace{-3pt}}
+    \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
 }
-\newcommand{\resumeSubheadingContinue}[2]{
-  \vspace{-3pt}
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-\newcommand{\resumeProjectHeading}[2]{
-  \vspace{-3pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-4pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
-    \begin{center}
-        % NAME
-        {\Huge\scshape {{NAME}}}
-        % SUBHEADING
-        \\ {{CONTACT_LINE}}\\
-        \small
-        % EMAIL
-        \href{mailto:{{EMAIL_URL}}}{\raisebox{-0.2\height}\faEnvelope\  \underline{{{EMAIL_DISPLAY}}}} ~
-        % LINKEDIN
-        \href{{{LINKEDIN_URL}}}{\raisebox{-0.2\height}\faLinkedin\ \underline{{{LINKEDIN_DISPLAY}}}}  ~
-        % GITHUB
-        \href{{{GITHUB_URL}}}{\raisebox{-0.2\height}\faGithub\ \underline{{{GITHUB_DISPLAY}}}}
-    \end{center}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education}
-  \resumeSubHeadingListStart
-{{EDUCATION}}
-  \resumeSubHeadingListEnd
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\huge {{NAME}}}  \\[5pt]
+  \href{mailto:{{EMAIL}}}
+  {\faicon{envelope} \underline{{{EMAIL}}}}  $\vert$
+  \faicon{linkedin} \href{{{LINKEDIN_URL}}}{\underline{{{LINKEDIN_DISPLAY}}}} $\vert$
+   \faicon{github} \href{{{GITHUB_URL}}}{\underline{{{GITHUB_DISPLAY}}}} $\vert$
+  \faicon{stack-overflow} \href{{{STACKOVERFLOW_URL}}}{\underline{{{STACKOVERFLOW_DISPLAY}}}} $\vert$
+  \faicon{flag} \href{{{CTFTIME_URL}}}{\underline{{{CTFTIME_DISPLAY}}}} $\vert$
+  {{PHONE}}\\
+\end{center}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Work Experience}
+%-----------SUMMARY-----------------
+\shorterSection{Summary}
+\vspace{2pt}
+\small{
+{{SUMMARY}}
+}
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
   \resumeSubHeadingListStart
 {{EXPERIENCE}}
   \resumeSubHeadingListEnd
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Personal Projects}
-\resumeSubHeadingListStart
-{{PROJECTS}}
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+{{EDUCATION}}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+{{SKILLS}}
+     \vspace{-5pt}
 \resumeSubHeadingListEnd
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Technical Skills}
-\vspace{-7pt}
-\begin{itemize}
-[leftmargin=0.15in, label={}]\small{\item{
-{{SKILLS}}
-}}
-\end{itemize}
+%-----------ACHIEVEMENTS-----------------
+\shorterSection{Achievements}
+  \resumeSubHeadingListStart
+  \small
+{{ACHIEVEMENTS}}
+  \resumeSubHeadingListEnd
 
+%-------------------------------------------
 \end{document}

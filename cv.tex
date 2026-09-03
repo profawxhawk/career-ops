@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author: Bharath Kumar
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor, fontawesome, tikz, hyperref}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-4pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\huge Bharath Kumar Thulasidoss}  \\[5pt]
+  \href{mailto:bharath.kumr.dev@gmail.com}
+  {\faicon{envelope} \underline{bharath.kumr.dev@gmail.com}}  $\vert$
+  \faicon{linkedin} \href{https://www.linkedin.com/in/bharath-kumar-thulasidoss/}{\underline{Bharath-Kumar}} $\vert$
+   \faicon{github} \href{https://github.com/profawxhawk}{\underline{Profawxhawk}} $\vert$
+  \faicon{stack-overflow} \href{https://stackoverflow.com/users/8595608/orsfield}{\underline{Orsfield}} $\vert$
+  \faicon{flag} \href{https://ctftime.org/team/15154}{\underline{d4rkc0de}} $\vert$
+  +91-9958183990\\
+\end{center}
+
+%-----------SUMMARY-----------------
+\shorterSection{Summary}
+\vspace{2pt}
+\small{
+Software Engineer with 5 years building high-scale distributed systems, data platforms, and full-stack products at Uber and Zomato. Led cross-team platform initiatives: architected schema management for \textbf{1M+ tables}, built a 3-tier testing strategy with \textbf{100+ integration tests} across the metadata ecosystem, and designed an AI data discovery tool serving \textbf{10,000+ users}. Re-architected real-time infrastructure for \textbf{500K+ concurrent clients} with 60\% cost reduction. Seeking Senior/SD3 roles in distributed systems, data platform, or full-stack engineering.
+}
+\vspace{2pt}
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+      {Uber}{Bengaluru, India}
+      {Software Engineer II --- Data Platform}{August 2024 -- Present}
+      \resumeItemListStart
+      \resumeItem{Schema Management \& Data Governance}
+          {Prevented \textbf{10+ annual schema incidents} by architecting a schema management system with dry-run validation, Spark Thrift Server integration, and lineage-based governance, enabling safe deployments across \textbf{150K+ pipelines} and \textbf{1M+ tables}.}
+        \resumeItem{Data Co-Pilot (Multi-Agent AI)}
+          {Spearheaded development of a multi-agent AI framework using LangGraph, improving data discovery efficiency by \textbf{85\%} (25 min $\rightarrow$ 3 min); adopted by \textbf{10,000+ users}.}
+        \resumeItem{Metadata \& Lineage Platform}
+          {Directed cloud region expansion reconciling \textbf{2M+ assets} across cloud and on-prem, achieving \textbf{99.95\% uptime} and \textbf{sub-second ingestion latency} for Uber's metadata platform handling \textbf{1M+ RPM}.}
+        \resumeItem{Safe Deployment}
+          {Orchestrated safe deployment across 4 services --- authored \textbf{100+ integration tests} spanning deploy-time, continuous monitoring, and end-to-end lifecycle validation, raising API endpoint coverage from \textbf{0\% to 100\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zomato}{Gurgaon, India}
+      {SDE-II, Full Stack Engineer}{June 2023 -- August 2024}
+      \resumeItemListStart
+        \resumeItem{WebSocket Service Re-architecture}
+          {Spearheaded re-architecture of relay service to AWS ECS with FCM/APNS dual delivery, reducing costs by \textbf{60\%} (containers: 200 $\rightarrow$ 15) and latency by \textbf{20\%}, scaling to \textbf{500K+ concurrent clients}.}
+        \resumeItem{Merchant Outlet Service}
+          {Led a 2-person team to build an event-driven architecture with Kafka, Redis, and DynamoDB, delivering \textbf{sub-5ms latency} at \textbf{1.5M read RPM} with \textbf{99.99\% availability}.}
+        \resumeItem{Analytics \& Developer Platform}
+          {Pioneered a YAML-based querier over Redis + Pinot, cutting widget creation from \textbf{weeks to 1 day}. Boosted org-wide productivity by \textbf{30\%} through JS monorepo with Vite. Mentored \textbf{3 engineers}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zomato}{Gurgaon, India}
+      {SDE-I, Full Stack Engineer}{June 2021 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{Merchant Offers \& Ads Platform}
+          {Generated \textbf{Rs 50M revenue/month} by developing payout, outlet, offers, and ads management features. Redesigned order acceptance UX, reducing acceptance time to under \textbf{17 seconds}.}
+        \resumeItem{Offline Order Dashboard}
+          {Devised an offline-first architecture with service workers, caching, and FCM push notifications for the merchant order dashboard, saving \textbf{$\sim$80\% of orders} placed during downtime.}
+        \resumeItem{Ztrend (Flagship Product)}
+          {Launched \href{https://www.zomato.com/trends/}{\textcolor{blue}{Ztrend}}, a food supply-and-demand visualization tool adopted by \textbf{100,000+ restaurateurs} across India for location intelligence, averaged \textbf{200K+ sessions/month}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indraprastha Institute of Information Technology}{Delhi, India}
+      {Bachelor of Technology in Computer Science \& Engineering;  CGPA: 9.04/10.0 $\vert$ Dean's Gold Medal}{June 2021}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: Go, Rust, Java, Python, JavaScript/TypeScript, C++}
+    }
+    \vspace{-4pt}
+    \item{
+     \textbf{Distributed Systems}{: Kafka, Flink, Spark, Airflow, gRPC, WebSockets}
+    }
+    \vspace{-4pt}
+    \item{
+     \textbf{Datastores}{: MySQL, DynamoDB, Redis, Cassandra, Pinot, MongoDB, Hive}
+    }
+    \vspace{-4pt}
+    \item{
+     \textbf{Infrastructure}{: AWS, Docker, Nginx, Grafana, Prometheus, New Relic, OpenTelemetry}
+    }
+    \vspace{-4pt}
+    \item{
+     \textbf{Frameworks}{: React.js, Node.js, Gin, Flask, Django, LangGraph}
+    }
+     \vspace{-5pt}
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\shorterSection{Achievements}
+  \resumeSubHeadingListStart
+  \small
+    \resumeItem{Patent}
+      {Granted patent for a rotatory Braille device assisting blind individuals in reading from images (Patent No. 201911002013).}
+    \resumeItem{SIH 2020}
+      {Secured \textbf{1st place} in the AMR track sponsored by Amazon at Smart India Hackathon.}
+    \resumeItem{QCRI 2018}
+      {Best Project Award for \textit{``Tweet Classification and Visualization for Disasters''} during QCRI summer internship.}
+    \resumeItem{Competitive Programming}
+      {CodeChef \textbf{5-Star} rating; Top 10 in CTF challenges with team \textit{d4rkc0de}.}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+/
